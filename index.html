@@ -36,7 +36,9 @@
               <li class="link-list">
                 <a href="./" class="link current">Студія</a>
               </li>
-              <li class="link-list"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+              <li class="link-list">
+                <a href="./portfolio.html" class="link">Портфоліо</a>
+              </li>
               <li class="link-list"><a href="" class="link">Контакти</a></li>
             </ul>
           </nav>
@@ -70,7 +72,16 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button-hero">Замовити послугу</button>
+          <button data-modal-open type="button" class="button-hero">Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button data-modal-close type="button" class="close-button">
+                <svg width="18px" heigth="18px">
+                  <use href="./images/icons.svg#icon-close-cross"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -443,5 +454,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
