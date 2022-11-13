@@ -72,7 +72,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button data-modal-open type="button" class="button-hero">
+          <button type="button" class="button-hero" data-modal-open>
             Замовити послугу
           </button>
           <div class="backdrop is-hidden" data-modal>
@@ -82,6 +82,23 @@
                   <use href="./images/icons.svg#icon-close-cross"></use>
                 </svg>
               </button>
+              <p class="modal-form-title">
+                Залиште свої дані, ми вам передзвонимо
+              </p>
+              <form name="contact-form">
+                <label class="form-label" for="person-name">Ім'я</label>
+                <div class="form-part">
+                  <input
+                    class="form-input"
+                    id="person-name"
+                    type="text"
+                    name="person-name"
+                  />
+                  <svg class="form-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                  </svg>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -420,7 +437,7 @@
               </ul>
             </address>
           </li>
-          <li class="footer-info-item">
+          <li class="footer-info-item push-next-block">
             <h3 class="footer-social">приєднуйтесь</h3>
             <ul class="soc-list">
               <li class="soc-item">
@@ -453,9 +470,42 @@
               </li>
             </ul>
           </li>
+          <li class="footer-info-item">
+            <p class="form-title">Підпишіться на розсилку</p>
+            <form
+              name="form-footer"
+              class="form-footer"
+              autocomplete="on"
+              novalidate
+            >
+              <div class="form-input-f">
+                <input
+                  type="email"
+                  class="form-footer-input"
+                  id="subscribe"
+                  name="email"
+                  placeholder=" "
+                />
+                <label for="subscribe" class="form-footer-label">E-mail</label>
+              </div>
+
+              <button type="submit" class="form-button-f">
+                Підписатися
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </li>
         </ul>
       </div>
     </footer>
+
+    <!-- <div class="backdrop" data-modal>
+
+
+
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
