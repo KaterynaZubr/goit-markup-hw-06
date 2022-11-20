@@ -409,9 +409,21 @@ cursor: pointer;}
     position: absolute;
 }
 
+.checkbox-label{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+}
+
 .checkbox-border{
-    position: relative;
-    align-items: baseline;
+    width: 16px;
+    height: 15px;
+    display:inline-block ;
+    justify-content: center;
+    align-items: center;
+    border:1px solid var(--soc-icon);
+    fill: tomato;
 }
 
 .checkbox-text{
