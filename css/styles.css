@@ -354,7 +354,7 @@ cursor: pointer;}
 
 .form-button{
     margin: 30px auto 0px auto;
-    padding: 10 52;
+    padding: 10px 52px;
 }
 
 .modal-form-title{
@@ -375,13 +375,14 @@ cursor: pointer;}
 .form-part{
     position: relative;
     fill: var(--brand-color-title);
+    /* margin-top: 10px; */
 }
 
 .form-label{
     display: block;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.17;
+    line-height: 1.167;
     margin-bottom: 4px;
     color: var(--brand-color-text);
 }
@@ -408,6 +409,7 @@ border-color: var(--brand-color-accent);
 }
 
 .form-textarea{
+    display: block;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -437,6 +439,12 @@ border-color: var(--brand-color-accent);
     transition-timing-function: var(--timing-function);
 }
 
+.checkbox-part{
+    position: relative;
+    fill: var(--brand-color-title);
+    margin-top: 20px;
+}
+
 .checkbox-label{
     display: flex;
     justify-content:center;
@@ -445,7 +453,7 @@ border-color: var(--brand-color-accent);
     line-height: 1.7;
     color: var(--brand-color-text);
     /* gap: 10px; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .checkbox-box{
@@ -967,6 +975,9 @@ padding: 60px 0;}
 .form-footer-input{
     width: 358px;
     height: 50px;
+    padding: 15px 16px;
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: var(--brand-color-bg);
@@ -1002,6 +1013,7 @@ border: 1px solid var(--brand-color-accent);
     font-size: 16px;
     line-height: 1,9;
     border: 0;
+    cursor: pointer;
     fill: var(--main-white);
     color: var(--main-white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
